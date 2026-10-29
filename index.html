@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Prestige | Премиальная стоматологическая клиника</title>
+  <meta name="description" content="Современная цифровая стоматология полного цикла: безболезненная имплантация, исправление прикуса, эстетическое отбеливание и лечение зубов под микроскопом.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-item">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>Пн — Вс: 08:30 — 21:00 • Без выходных</span>
+      </div>
+      <div class="top-bar-item">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Москва, Кутузовский проспект, 32 / Собственная парковка</span>
+      </div>
+      <div class="top-bar-item top-contact">
+        <a href="tel:+74959990011" class="top-phone">+7 (495) 999-00-11</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <div class="container header-content">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.5 2 6 4.5 6 8c0 3.5 2 6 3 9.5.7 2.5 1.5 4.5 3 4.5s2.3-2 3-4.5c1-3.5 3-6 3-9.5 0-3.5-2.5-6-6-6z"/><path d="M10 8c0-1.1.9-2 2-2s2 .9 2 2"/></svg>
+        </div>
+        <div class="logo-text">
+          <span class="brand-name">Dental Prestige</span>
+          <span class="brand-tag">Клиника эстетической стоматологии</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">О клинике</a>
+        <a href="#services" class="nav-link">Услуги и цены</a>
+        <a href="#calc" class="nav-link">Калькулятор</a>
+        <a href="#cases" class="nav-link">До / После</a>
+        <a href="#doctors" class="nav-link">Врачи</a>
+        <a href="#reviews" class="nav-link">Отзывы</a>
+        <a href="#contacts" class="nav-link">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-primary" onclick="openBookingModal()">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Записаться онлайн</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню" onclick="toggleMobileMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-container">
+      <div class="hero-text-col">
+        <div class="badge-pill">
+          <span class="pulse-dot"></span>
+          <span>Передовая немецкая стоматология Kavo & Carl Zeiss</span>
+        </div>
+        <h1 class="hero-title">
+          Совершенная улыбка без боли и компромиссов
+        </h1>
+        <p class="hero-description">
+          Полный комплекс экспертной стоматологии под микроскопом. Цифровая 3D-диагностика, имплантация за 1 день и эстетические керамические виниры ручной работы с пожизненной гарантией.
+        </p>
+        
+        <div class="hero-cta-group">
+          <button class="btn btn-primary btn-lg" onclick="openBookingModal()">
+            <span>Записаться на консультацию</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+          <a href="#calc" class="btn btn-outline btn-lg">
+            <span>Рассчитать стоимость</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-num">12+</span>
+            <span class="stat-label">лет безупречной практики</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-num">15 000+</span>
+            <span class="stat-label">счастливых улыбок</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-num">99.8%</span>
+            <span class="stat-label">приживаемость имплантов</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual-col">
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80" alt="Современный стоматологический кабинет Dental Prestige" class="hero-main-img">
+          
+          <div class="floating-badge badge-top-right">
+            <div class="badge-icon green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <strong>100% Без боли</strong>
+              <small>Компьютерная анестезия STA</small>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-left">
+            <div class="rating-stars">★★★★★</div>
+            <strong>4.9 на Яндекс.Картах</strong>
+            <small>Более 850 проверенных отзывов</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Advantages Bar -->
+  <section class="advantages-bar">
+    <div class="container">
+      <div class="advantages-grid">
+        <div class="adv-card">
+          <div class="adv-icon">🔬</div>
+          <h3>Лечение под микроскопом</h3>
+          <p>Оптика Carl Zeiss с 30-кратным увеличением сохраняет даже самые безнадёжные зубы.</p>
+        </div>
+        <div class="adv-card">
+          <div class="adv-icon">⚡</div>
+          <h3>Имплантация за 1 день</h3>
+          <p>Одномоментная установка имплантатов Nobel Biocare и Osstem с немедленной нагрузкой.</p>
+        </div>
+        <div class="adv-card">
+          <div class="adv-icon">🛡</div>
+          <h3>Пожизненная гарантия</h3>
+          <p>Предоставляем юридическую гарантию на имплантацию и ортопедические конструкции.</p>
+        </div>
+        <div class="adv-card">
+          <div class="adv-icon">💳</div>
+          <h3>Честная рассрочка 0%</h3>
+          <p>Лечение в рассрочку без первоначального взноса и переплат до 24 месяцев.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Консультация врача-стоматолога" class="about-img-primary">
+          <div class="experience-card">
+            <span class="exp-number">12</span>
+            <span class="exp-text">Лет клинического лидерства в Москве</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag">О нашей клинике</span>
+          <h2 class="section-title">Медицина высочайшего уровня с заботой о вашем комфорте</h2>
+          <p class="section-desc">
+            Dental Prestige объединяет передовые европейские протоколы, немецкое диагностическое оборудование и опыт ведущих кандидатов медицинских наук.
+          </p>
+          <ul class="check-list">
+            <li>
+              <span class="check-icon">✓</span>
+              <div>
+                <strong>Цифровой протокол Digital Smile Design</strong>
+                <p>Вы увидите свою будущую идеальную улыбку на 3D-модели ещё до начала лечения.</p>
+              </div>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <div>
+                <strong>Максимальная стерильность по стандартам АнтиСПИД и АнтиГепатит</strong>
+                <p>Многоступенчатая автоматическая стерилизация инструментов Melag (Германия).</p>
+              </div>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <div>
+                <strong>Премиальный сервис и персональный куратор</strong>
+                <p>Комфортные лаунж-зоны, ароматный кофе, массажные кресла и полное сопровождение.</p>
+              </div>
+            </li>
+          </ul>
+          <div class="about-cta">
+            <button class="btn btn-primary" onclick="openBookingModal()">Записаться на бесплатный осмотр</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Prices Section -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Направления лечения</span>
+        <h2 class="section-title">Полный спектр стоматологических услуг</h2>
+        <p class="section-desc">Прозрачные фиксированные цены без скрытых доплат</p>
+      </div>
+
+      <div class="services-filter">
+        <button class="filter-btn active" data-category="all">Все услуги</button>
+        <button class="filter-btn" data-category="therapy">Терапия</button>
+        <button class="filter-btn" data-category="implant">Имплантация</button>
+        <button class="filter-btn" data-category="ortho">Ортодонтия</button>
+        <button class="filter-btn" data-category="aesthetic">Эстетика и виниры</button>
+        <button class="filter-btn" data-category="surgery">Хирургия</button>
+      </div>
+
+      <div class="services-grid" id="servicesGrid">
+        <!-- Service cards will be rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Price Calculator Section -->
+  <section class="section calc-section" id="calc">
+    <div class="container">
+      <div class="calc-box">
+        <div class="calc-header text-center">
+          <span class="section-tag">Онлайн-расчёт</span>
+          <h2 class="section-title">Интерактивный калькулятор стоимости</h2>
+          <p class="section-desc">Выберите необходимые услуги для предварительного расчета плана лечения</p>
+        </div>
+
+        <div class="calc-body">
+          <div class="calc-options">
+            <div class="calc-group">
+              <label class="calc-label">1. Основная цель визита:</label>
+              <div class="calc-chips">
+                <button class="chip-btn active" data-service="caries" data-price="4500">Лечение кариеса</button>
+                <button class="chip-btn" data-service="implant" data-price="38000">Имплантация зуба</button>
+                <button class="chip-btn" data-service="veneer" data-price="29000">Виниры E-Max</button>
+                <button class="chip-btn" data-service="braces" data-price="120000">Брекеты / Элайнеры</button>
+                <button class="chip-btn" data-service="whitening" data-price="18000">Отбеливание Zoom 4</button>
+              </div>
+            </div>
+
+            <div class="calc-group">
+              <label class="calc-label">2. Количество зубов:</label>
+              <div class="slider-wrapper">
+                <input type="range" id="teethCountRange" min="1" max="10" value="1" class="custom-slider">
+                <div class="slider-value">Количество: <strong id="teethCountDisplay">1</strong></div>
+              </div>
+            </div>
+
+            <div class="calc-group">
+              <label class="calc-label">3. Дополнительные опции:</label>
+              <div class="checkbox-list">
+                <label class="custom-checkbox">
+                  <input type="checkbox" id="optCtScan" value="3500">
+                  <span class="checkmark"></span>
+                  <span>Компьютерная 3D-томография (КТ) (+3 500 ₽)</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" id="optMicroscope" value="2500" checked>
+                  <span class="checkmark"></span>
+                  <span>Лечение под микроскопом Zeiss (+2 500 ₽)</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" id="optSedation" value="6000">
+                  <span class="checkmark"></span>
+                  <span>Лечение во сне / седация (+6 000 ₽)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-summary">
+            <div class="summary-card">
+              <h3>Предварительный расчёт</h3>
+              <div class="summary-price-box">
+                <span class="price-sub">Итоговая стоимость:</span>
+                <span class="calc-total-price" id="calcTotal">7 000 ₽</span>
+              </div>
+              <p class="summary-note">
+                В рассрочку от <strong><span id="installmentDisplay">583</span> ₽/мес</strong> без первого взноса.
+              </p>
+              <button class="btn btn-primary btn-block" onclick="bookFromCalculator()">
+                Зафиксировать цену со скидкой 10%
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before / After Case Gallery -->
+  <section class="section cases-section" id="cases">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Результаты работы</span>
+        <h2 class="section-title">Клинические случаи До и После</h2>
+        <p class="section-desc">Реальные работы наших ведущих врачей-стоматологов</p>
+      </div>
+
+      <div class="cases-container">
+        <div class="case-card">
+          <div class="comparison-container" id="compareContainer1">
+            <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=700&q=80" alt="После реставрации" class="img-after">
+            <div class="img-before-wrapper">
+              <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=700&q=80" alt="До лечения" class="img-before">
+            </div>
+            <div class="comparison-slider">
+              <div class="slider-button">↔</div>
+            </div>
+          </div>
+          <div class="case-info">
+            <h4>Тотальное преображение улыбки керамическими винирами</h4>
+            <p>Пациентка 32 года. Установка 10 виниров E-Max на верхний зубной ряд. Срок лечения — 10 дней.</p>
+            <div class="case-doctor">Врач: <strong>д-р Смирнов А. В.</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors Section -->
+  <section class="section doctors-section" id="doctors">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Команда профессионалов</span>
+        <h2 class="section-title">Ведущие специалисты клиники</h2>
+        <p class="section-desc">Врачи с европейской практикой и непрерывным повышением квалификации</p>
+      </div>
+
+      <div class="doctors-grid">
+        <div class="doctor-card">
+          <div class="doctor-photo">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Главный врач">
+            <div class="doc-badge">Стаж 16 лет</div>
+          </div>
+          <div class="doctor-details">
+            <h3>Смирнов Алексей Викторович</h3>
+            <span class="doc-role">Главный врач, стоматолог-ортопед, хирург-имплантолог</span>
+            <p>Кандидат медицинских наук, сертифицированный эксперт Nobel Biocare (Швейцария). Более 4 000 установленных имплантов.</p>
+            <button class="btn btn-outline btn-sm" onclick="bookDoctor('Смирнов А. В.')">Записаться к врачу</button>
+          </div>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doctor-photo">
+            <img src="https://images.unsplash.com/photo-1594824813583-16279f538356?auto=format&fit=crop&w=600&q=80" alt="Стоматолог-терапевт">
+            <div class="doc-badge">Стаж 11 лет</div>
+          </div>
+          <div class="doctor-details">
+            <h3>Волкова Екатерина Сергеевна</h3>
+            <span class="doc-role">Ведущий стоматолог-терапевт, микроскопист</span>
+            <p>Специалист по художественной реставрации и эндодонтии под микроскопом Zeiss. Победитель всероссийского конкурса реставраторов.</p>
+            <button class="btn btn-outline btn-sm" onclick="bookDoctor('Волкова Е. С.')">Записаться к врачу</button>
+          </div>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doctor-photo">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80" alt="Ортодонт">
+            <div class="doc-badge">Стаж 9 лет</div>
+          </div>
+          <div class="doctor-details">
+            <h3>Морозов Денис Павлович</h3>
+            <span class="doc-role">Врач-ортодонт, гнатолог</span>
+            <p>Эксперт по исправлению прикуса любой сложности элайнерами Spark и эстетическими самолигирующими брекетами Damon.</p>
+            <button class="btn btn-outline btn-sm" onclick="bookDoctor('Морозов Д. П.')">Записаться к врачу</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Patient Reviews -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Мнения пациентов</span>
+        <h2 class="section-title">Отзывы о лечении в Dental Prestige</h2>
+        <p class="section-desc">Честные отзывы пациентов с независимых медицинских порталов</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">
+            «Всегда панически боялась стоматологов с детства. В Dental Prestige мне ставили имплант — я вообще ничего не почувствовала! Компьютерная анестезия творит чудеса, а доктор Смирнов настоящий мастер своего дела!»
+          </p>
+          <div class="rev-author">
+            <div class="author-avatar">АМ</div>
+            <div>
+              <strong>Анна Мельникова</strong>
+              <small>Имплантация зуба под ключ</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">
+            «Сделал комплексную чистку и отбеливание Zoom 4 перед свадьбой. Результат превзошел все ожидания — зубы стали белее на 8 тонов, чувствительности никакой! Спасибо Екатерине Сергеевне!»
+          </p>
+          <div class="rev-author">
+            <div class="author-avatar">ДВ</div>
+            <div>
+              <strong>Дмитрий Васильев</strong>
+              <small>Отбеливание Zoom 4</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">
+            «Поставили виниры на 8 верхних зубов. Улыбка выглядит абсолютно естественно, цвет и прозрачность подобраны филигранно. Клиника высочайшего европейского уровня, рекомендую всем знакомым!»
+          </p>
+          <div class="rev-author">
+            <div class="author-avatar">ОК</div>
+            <div>
+              <strong>Ольга Кравцова</strong>
+              <small>Керамические виниры E-Max</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts & Map Section -->
+  <section class="section contacts-section" id="contacts">
+    <div class="container">
+      <div class="contacts-grid">
+        <div class="contacts-info">
+          <span class="section-tag">Контакты и запись</span>
+          <h2 class="section-title">Ждём вас в нашей клинике</h2>
+          <p class="section-desc">Удобное расположение в центре столицы, подземная охраняемая парковка для пациентов клиники.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="c-icon">📍</div>
+              <div>
+                <strong>Адрес:</strong>
+                <p>Москва, Кутузовский проспект, 32 (метро Кутузовская / Парк Победы)</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="c-icon">📞</div>
+              <div>
+                <strong>Телефон единого колл-центра:</strong>
+                <p><a href="tel:+74959990011">+7 (495) 999-00-11</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="c-icon">💬</div>
+              <div>
+                <strong>Мессенджеры:</strong>
+                <p>WhatsApp / Telegram: <a href="https://t.me/utkaepta" target="_blank">@utkaepta</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="c-icon">⏰</div>
+              <div>
+                <strong>Режим работы:</strong>
+                <p>Ежедневно с 08:30 до 21:00 без праздников и выходных</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-form-card">
+          <h3>Запись на консультацию врача</h3>
+          <p>Оставьте контакты, и мы перезвоним в течение 3 минут для подбора удобного времени приёма.</p>
+          
+          <form id="contactBookingForm" onsubmit="handleDirectBooking(event)">
+            <div class="form-group">
+              <label>Ваше имя</label>
+              <input type="text" id="directName" placeholder="Иван Иванов" required>
+            </div>
+            <div class="form-group">
+              <label>Номер телефона</label>
+              <input type="tel" id="directPhone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <div class="form-group">
+              <label>Интересующая услуга</label>
+              <select id="directService">
+                <option value="Консультация и осмотр">Первичная консультация и 3D-осмотр</option>
+                <option value="Лечение зубов">Лечение зубов под микроскопом</option>
+                <option value="Имплантация">Имплантация зубов под ключ</option>
+                <option value="Виниры">Керамические виниры E-Max</option>
+                <option value="Брекеты / Элайнеры">Исправление прикуса</option>
+                <option value="Профгигиена / Отбеливание">Профессиональная гигиена и отбеливание</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Отправить заявку со скидкой 10%
+            </button>
+            <small class="form-privacy">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-col">
+        <div class="logo">
+          <div class="logo-text">
+            <span class="brand-name">Dental Prestige</span>
+            <span class="brand-tag">Премиальная стоматология</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Лицензия № ЛО-77-01-020941 от 14.10.2021 г. Выдана Департаментом здравоохранения города Москвы.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <ul class="footer-links">
+          <li><a href="#about">О клинике</a></li>
+          <li><a href="#services">Услуги и цены</a></li>
+          <li><a href="#doctors">Врачи</a></li>
+          <li><a href="#cases">До / После</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Услуги</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Имплантация зубов</a></li>
+          <li><a href="#services">Керамические виниры</a></li>
+          <li><a href="#services">Элайнеры и брекеты</a></li>
+          <li><a href="#services">Лечение под микроскопом</a></li>
+          <li><a href="#services">Отбеливание Zoom 4</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <p>Москва, Кутузовский пр-т, 32</p>
+        <p><a href="tel:+74959990011" class="footer-phone">+7 (495) 999-00-11</a></p>
+        <p>info@dental-prestige.ru</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>© 2026 Dental Prestige Clinic. Все права защищены.</p>
+        <p>Разработано для @utkaepta</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Booking Dialog -->
+  <div class="modal-overlay" id="bookingModal" onclick="closeModalOnOverlay(event)">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeBookingModal()">✕</button>
+      <div class="modal-header">
+        <span class="section-tag">Быстрая запись</span>
+        <h3>Записаться на прием</h3>
+        <p>Выберите специалиста и удобное время для визита</p>
+      </div>
+
+      <form id="modalBookingForm" onsubmit="handleModalBooking(event)">
+        <div class="form-group">
+          <label>Ваше ФИО</label>
+          <input type="text" id="mName" placeholder="Введите ваше имя" required>
+        </div>
+        <div class="form-group">
+          <label>Номер телефона</label>
+          <input type="tel" id="mPhone" placeholder="+7 (___) ___-__-__" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Желаемая дата</label>
+            <input type="date" id="mDate" required>
+          </div>
+          <div class="form-group">
+            <label>Удобное время</label>
+            <select id="mTime">
+              <option>10:00</option>
+              <option>12:00</option>
+              <option>14:30</option>
+              <option>16:00</option>
+              <option>18:30</option>
+              <option>20:00</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Специалист</label>
+          <select id="mDoctor">
+            <option value="Любой свободный врач">Любой дежурный специалист</option>
+            <option value="Смирнов А. В.">Смирнов А. В. (Хирург / Ортопед)</option>
+            <option value="Волкова Е. С.">Волкова Е. С. (Терапевт / Эстетист)</option>
+            <option value="Морозов Д. П.">Морозов Д. П. (Ортодонт / Гнатолог)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Подтвердить запись</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <div class="toast-icon">✓</div>
+    <div class="toast-content">
+      <strong id="toastTitle">Заявка принята!</strong>
+      <p id="toastMessage">Мы свяжемся с вами в течение нескольких минут.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
